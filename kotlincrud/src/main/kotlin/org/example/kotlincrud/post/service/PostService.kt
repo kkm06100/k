@@ -4,9 +4,11 @@ import org.example.kotlincrud.post.persistence.PostRepository
 import org.example.kotlincrud.post.presentation.dto.request.PostRequest
 import org.example.kotlincrud.post.presentation.dto.response.PostResponse
 import org.springframework.data.repository.findByIdOrNull
+import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 
 @Transactional
+@Service
 class PostService(
         private val postRepository: PostRepository
 ) {
